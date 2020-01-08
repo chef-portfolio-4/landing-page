@@ -164,5 +164,38 @@ img {
 }
 /*================ HOME-PAGE ================*/
 /*================ AboutUs ==================*/
+.aboutBox {
+  text-align: center;
+  margin: 5% 10%;
+  border: 1px solid red;
+}
+.aboutBox .saladBox {
+  border: 1px solid pink;
+  display: flex;
+  object-fit: scale-down;
+}
+.aboutBox .featBox {
+  align-content: center;
+  border: 1px solid blue;
+}
+.aboutBox .tvLogo {
+  border: 1px solid orange;
+  align-self: center;
+}
+#aboutCenterText {
+  font-size: 3rem;
+  padding-top: 10vh;
+  padding-left: 2%;
+  padding-right: 2%;
+}
 /*================ SocialMedia ==============*/
+.socialMediaBox {
+  text-align: center;
+  border: 1px solid red;
+  margin: 5% 10%;
+}
+.socialMediaBox .socialIcon {
+  display: flex;
+  justify-content: space-around;
+}
 /*================ FOOTER ===================*/
