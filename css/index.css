@@ -132,7 +132,7 @@ img {
 }
 #heading nav ul {
   position: fixed;
-  width: 550px;
+  width: 40%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -143,6 +143,24 @@ img {
 #heading nav a {
   color: aliceblue;
   text-decoration: none;
+}
+#heading #title {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#heading #title h1 {
+  display: flex;
+  align-self: center;
+  color: aquamarine;
+  font-size: 6rem;
+}
+#heading #title p {
+  display: flex;
+  align-self: center;
+  text-align: center;
+  width: 50%;
 }
 /*================ HOME-PAGE ================*/
 /*================ AboutUs ==================*/
