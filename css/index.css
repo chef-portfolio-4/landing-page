@@ -256,3 +256,28 @@ img {
   justify-content: space-around;
 }
 /*================ FOOTER ===================*/
+.footer {
+  border: 1px solid red;
+  padding-top: 3%;
+  background-image: url(../images/footerWood.jpeg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 20vh;
+  text-decoration: none;
+}
+.footer .navFooter {
+  display: flex;
+  justify-content: space-around;
+  color: aliceblue;
+  font-size: 3rem;
+  text-decoration: none;
+}
+.footer .navFooter a {
+  text-decoration: none;
+}
+.copyright {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
