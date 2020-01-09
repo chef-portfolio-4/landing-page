@@ -555,6 +555,7 @@ img {
 }
 .aboutBox .saladBox {
   display: flex;
+  flex-shrink: 0;
 }
 .aboutBox .saladBox .saladPic1 {
   width: 400px;
