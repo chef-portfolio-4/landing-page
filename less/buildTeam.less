@@ -2,6 +2,9 @@
     // border: 1px solid blue;
     text-align: center;
     margin: 2% 7%;
+    @media @mobile{
+        margin:0 1%;
+    }
     .teamBox{
         // border: 1px solid green;
         width: 100%;
@@ -9,9 +12,13 @@
         flex-wrap: wrap;
         margin-top: 3%;
         .members{
+            // border: 1px solid red;
             width: 17%;
             margin: 0 4%;
             margin-bottom: 2%;
+            @media @mobile{
+                width: 40%;
+            }
         }
     }
 }

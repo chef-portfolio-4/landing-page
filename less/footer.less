@@ -2,22 +2,33 @@
     // border: 1px solid red;
     padding-top: 1%;
     background-image: url(../images/woodOG.jpg);
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
     image-rendering: pixelated;
     height: 19vh;
     width: 100%;
     text-decoration: none;
+    @media @mobile{
+        height: 30vh;
+    }
     .navFooter{
+        // border: 1px solid blue;
         display: flex;
         justify-content: space-around;
         color: aliceblue;
-        font-size: 3.5rem;
+        font-size: 5rem;
         text-decoration: none;
+        @media @mobile{
+            flex-wrap: wrap;
+            font-size: 5rem;
+        }
         a{
             text-decoration: none;
             color: aliceblue;
+            @media @mobile{
+                margin: 0 4%;
+            }
     }
    }
    .copyright{
@@ -25,5 +36,9 @@
        padding-top: 1.75%;
        font-size: 3rem;
        text-align: center;
+       @media @mobile{
+           font-size: 3rem;
+           padding-top: 4rem;
+       }
    }
 }

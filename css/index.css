@@ -416,17 +416,35 @@ img {
 }
 @media ( max-width: 500px ) {
   .aboutBox {
-    margin: 0 0;
+    margin: 0 1%;
     text-align: center;
   }
 }
 .aboutBox .saladBox {
-  border: 1px solid pink;
   display: flex;
+}
+.aboutBox .saladBox .saladPic1 {
+  width: 30%;
+}
+@media ( max-width: 500px ) {
+  .aboutBox .saladBox .saladPic1 {
+    display: none;
+  }
+}
+.aboutBox .saladBox .saladPic2 {
+  display: none;
+}
+@media ( max-width: 500px ) {
+  .aboutBox .saladBox .saladPic2 {
+    display: inline-block;
+    width: 100%;
+  }
 }
 @media ( max-width: 500px ) {
   .aboutBox .saladBox {
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto auto;
   }
 }
 .aboutBox .featBox {
@@ -434,11 +452,30 @@ img {
   font-size: 3rem;
   padding-top: 3%;
 }
+@media ( max-width: 500px ) {
+  .aboutBox .featBox {
+    padding-top: 10%;
+  }
+}
 .aboutBox .tvLogo {
   display: flex;
   justify-content: space-around;
   align-self: center;
   padding-top: 2%;
+}
+@media ( max-width: 500px ) {
+  .aboutBox .tvLogo {
+    flex-direction: column;
+  }
+}
+.aboutBox .tvLogo .logo {
+  width: 300px;
+}
+@media ( max-width: 500px ) {
+  .aboutBox .tvLogo .logo {
+    width: 70%;
+    margin-left: 15%;
+  }
 }
 #aboutCenterText {
   font-size: 3rem;
@@ -446,10 +483,23 @@ img {
   padding-left: 2%;
   padding-right: 2%;
 }
+@media ( max-width: 500px ) {
+  #aboutCenterText {
+    font-size: 2.5rem;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 90%;
+  }
+}
 /*================ SocialMedia ==============*/
 .socialMediaBox {
   text-align: center;
   margin: 2% 10%;
+}
+@media ( max-width: 500px ) {
+  .socialMediaBox {
+    margin: 0;
+  }
 }
 .socialMediaBox .socialIcon {
   display: flex;
@@ -498,6 +548,11 @@ input[type=submit]:hover {
   margin: 0 20%;
   margin-bottom: 5vh;
 }
+@media ( max-width: 500px ) {
+  .email {
+    margin: 2% 1%;
+  }
+}
 .contactTitle {
   text-align: center;
 }
@@ -505,6 +560,11 @@ input[type=submit]:hover {
 .buildBox {
   text-align: center;
   margin: 2% 7%;
+}
+@media ( max-width: 500px ) {
+  .buildBox {
+    margin: 0 1%;
+  }
 }
 .buildBox .teamBox {
   width: 100%;
@@ -517,11 +577,16 @@ input[type=submit]:hover {
   margin: 0 4%;
   margin-bottom: 2%;
 }
+@media ( max-width: 500px ) {
+  .buildBox .teamBox .members {
+    width: 40%;
+  }
+}
 /*================ FOOTER ===================*/
 .footer {
   padding-top: 1%;
   background-image: url(../images/woodOG.jpg);
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
   image-rendering: pixelated;
@@ -529,20 +594,42 @@ input[type=submit]:hover {
   width: 100%;
   text-decoration: none;
 }
+@media ( max-width: 500px ) {
+  .footer {
+    height: 30vh;
+  }
+}
 .footer .navFooter {
   display: flex;
   justify-content: space-around;
   color: aliceblue;
-  font-size: 3.5rem;
+  font-size: 5rem;
   text-decoration: none;
+}
+@media ( max-width: 500px ) {
+  .footer .navFooter {
+    flex-wrap: wrap;
+    font-size: 5rem;
+  }
 }
 .footer .navFooter a {
   text-decoration: none;
   color: aliceblue;
+}
+@media ( max-width: 500px ) {
+  .footer .navFooter a {
+    margin: 0 4%;
+  }
 }
 .footer .copyright {
   color: white;
   padding-top: 1.75%;
   font-size: 3rem;
   text-align: center;
+}
+@media ( max-width: 500px ) {
+  .footer .copyright {
+    font-size: 3rem;
+    padding-top: 4rem;
+  }
 }
