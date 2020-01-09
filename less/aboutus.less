@@ -2,22 +2,40 @@
     text-align: center;
     margin: 1% 10%;
     @media @mobile{
-        margin: 0 0;
+        margin: 0 1%;
         text-align: center;
     }
     .saladBox {
-        border: 1px solid pink;
+        // border: 1px solid pink;
         display: flex;
+        .saladPic1{
+            width: 30%;
+            @media @mobile{
+                display: none;
+            }
+        }
+        .saladPic2{
+            display: none;
+            @media @mobile{
+                display: inline-block;
+                width: 100%;
+            }
+        }
         @media @mobile{
-            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            margin: auto auto;
         }
     }
     .featBox {
-        //display: flex;
+        // display: flex;
         align-content: center;
         // border: 1px solid blue;
         font-size: 3rem;
         padding-top: 3%;
+        @media @mobile{
+            padding-top: 10%;
+        }
     }
     .tvLogo {
         // border: 1px solid orange;
@@ -25,12 +43,29 @@
         justify-content: space-around;
         align-self: center;
         padding-top: 2%;
+        @media @mobile{
+            flex-direction: column;
+        }
+        .logo{
+            width: 300px;
+            @media @mobile{
+                width: 70%;
+                // border: 1px solid blue;
+                margin-left: 15%;
+            }
+        }
     }
 }
 #aboutCenterText{
-    //color: red;
+    // color: red;
     font-size: 3rem;
     padding-top: 10vh;
     padding-left: 2%;
     padding-right: 2%;
+    @media @mobile{
+        font-size: 2.5rem;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        width: 90%;
+    }
 }
