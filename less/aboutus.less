@@ -1,11 +1,17 @@
 .aboutBox {
     text-align: center;
     margin: 1% 10%;
-    // border: 1px solid red;
+    @media @mobile{
+        margin: 0 0;
+        text-align: center;
+    }
     .saladBox {
         // border: 1px solid pink;
         display: flex;
         object-fit: scale-down;
+        @media @mobile{
+            text-align: center;
+        }
     }
     .featBox {
         //display: flex;
