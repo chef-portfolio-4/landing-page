@@ -557,7 +557,7 @@ img {
   display: flex;
 }
 .aboutBox .saladBox .saladPic1 {
-  width: 30%;
+  width: 400px;
 }
 @media ( max-width: 500px ) {
   .aboutBox .saladBox .saladPic1 {
