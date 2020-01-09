@@ -194,35 +194,64 @@ img {
   align-self: center;
   font-size: 3rem;
   text-decoration: none;
+  text-align: center;
 }
 #heading nav ul {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   width: 100%;
 }
-#heading nav ul a {
+#heading nav ul li a {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.166);
+  margin: 7% 0;
+  padding: 4% 25%;
+  border-radius: 15px;
+  font-family: 'Courier Prime', monospace;
+}
+#heading nav ul li a:hover {
   color: aliceblue;
+  opacity: 0.85;
+  background-color: rgba(0, 0, 0, 0.386);
+  box-shadow: 0 0 3px 2px rgba(0, 136, 255, 0.673);
 }
 #heading #searchbar1 {
   display: flex;
   align-self: center;
-  padding: 20px 0;
   width: 30%;
+  border-radius: 25px;
+  padding: 16px;
 }
 #heading #searchbar1 input {
-  padding: 10px 0px;
+  padding: 16px;
   width: 100%;
   font-size: 2rem;
   border-radius: 25px;
+  box-shadow: 1px 1px #9d6403;
+}
+#heading #searchbar1 .text1 {
+  background-image: url(/images/chefPortfolioLogo-Search.jpg);
+  background-repeat: no-repeat;
+  background-position: center right 10%;
+}
+@media screen and (max-width: 1520px) {
+  #heading #searchbar1 .text1 {
+    background-image: none;
+  }
+}
+#heading #searchbar1 .text1:focus {
+  box-shadow: 0 0 3px 2px #0088ff;
+  outline: none;
+  background-image: none;
 }
 #heading #title {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 150px;
 }
 #heading #title h1 {
   display: flex;
@@ -231,6 +260,7 @@ img {
   font-size: 11rem;
   font-family: 'Ma Shan Zheng', cursive;
   padding: 20px;
+  text-shadow: 2px 2px 5px black;
 }
 #heading #title p {
   display: flex;
@@ -238,9 +268,20 @@ img {
   text-align: center;
   width: 50%;
   color: aliceblue;
-  font-size: 3rem;
+  font-size: 3.65rem;
   font-family: 'Caveat', cursive;
   padding: 20px;
+  text-shadow: -2px 0 black, 0 3px black, 3px 0 black, 0 -2px black;
+}
+@media screen and (max-width: 1700px) {
+  #heading #title p {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 1285px) {
+  #heading #title p {
+    width: 75%;
+  }
 }
 /*================ HOME-PAGE ================*/
 .container {
