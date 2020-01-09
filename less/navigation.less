@@ -6,42 +6,81 @@
     background-attachment: fixed;
     // width: 100%;
     height: 100vh;
+    box-shadow: 0 2px 10px grey;
+//    margin-bottom: 20px;
+//    nav{
+//        display: flex;
+//        justify-content: flex-end;
+//        ul{
+//            position: fixed;
+//            width: 40%;
+//            display: flex;
+//            flex-direction: row;
+//            justify-content: space-around;
+//            font-size: 3.5rem;
+//            text-decoration: none;
+//            padding-top: 20px;
+//        }
+//        a{
+//            color: aliceblue;
+//            text-decoration: none;
+//        }
+//    }
     nav{
         display: flex;
-        justify-content: flex-end;
-//        justify-content: space-between;
+        align-self: center;
+        font-size: 3rem;
+        text-decoration: none;
+//        padding: 20px 0;
+//        position: relative;
         ul{
-            position: fixed;
-//            width: 550px;
-            width: 40%;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: space-around;
-            font-size: 3.5rem;
-            text-decoration: none;
-            padding-top: 20px;
+            width: 100%;
+//            height: 250px;
+            
+            a{
+                text-decoration: none;
+                color: aliceblue;
         }
-        a{
-            color: aliceblue;
-            text-decoration: none;
         }
+    }
+     #searchbar1{
+         display: flex;
+         align-self: center;
+         padding: 20px 0;
+         width: 30%;
+         input{
+             padding: 10px 0px;
+             width: 100%;
+             font-size: 2rem;
+             border-radius: 25px;
+         }
     }
     #title{
         height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-bottom: 150px;
         h1{
             display: flex;
             align-self: center;
             color: aquamarine;
-            font-size: 6rem;
+            font-size: 11rem;
+            font-family: 'Ma Shan Zheng', cursive;
+            padding: 20px;
         }
         p{
             display: flex;
             align-self: center;
             text-align: center;
             width: 50%;
+            color: aliceblue;
+            font-size: 3rem;
+            font-family: 'Caveat', cursive;
+            padding: 20px;
         }
     }
     
