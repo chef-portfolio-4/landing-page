@@ -319,11 +319,32 @@ img {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .container .featured-text div {
+  position: relative;
   background-color: aliceblue;
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
+}
+.container .featured-text div div {
+  position: absolute;
+  bottom: 0;
+  background: #000000;
+  background: rgba(0, 0, 0, 0.5);
+  /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 70%;
+}
+.container .featured-text div div a {
+  text-decoration: none;
+  color: white;
 }
 .container .featured-text div img {
   display: flex;
@@ -331,6 +352,9 @@ img {
   background-color: dimgray;
   width: 70%;
   margin-bottom: 2px;
+}
+.container .featured-text .overlay-container:hover .overlay {
+  opacity: 1;
 }
 .container .featured-chef {
   display: flex;
