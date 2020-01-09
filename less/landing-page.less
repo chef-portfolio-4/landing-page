@@ -18,13 +18,20 @@
         align-items: center;
         
         h1{
+            font-family: 'Bitter', serif;
+            font-weight: bold;
             color: black;;
             margin: 0;
+            text-align: center;
         }
         
         p{
-            width: 80%;
+            text-align: center;
+            font-family: 'Domine', serif;
+            width: 60%;
             padding: 20px 0;
+            line-height: 2.5rem;
+            padding-bottom: 50px;
             span{
                 a{
                     text-decoration: none;
@@ -36,7 +43,7 @@
                 }
             }
         }
-        div {
+        .overlay-container {
             position: relative;
             background-color: aliceblue;
             display: flex;
@@ -45,8 +52,7 @@
             align-items: center;
             div{
                 position: absolute;
-                bottom: 0; 
-                background: rgb(0, 0, 0);
+                bottom: 0;
                 background: rgba(0, 0, 0, 0.5); /* Black see-through */
                 color: #f1f1f1; 
                 width: 100%;
@@ -89,9 +95,13 @@
             }
         }
         h2{
+            font-family: 'Bitter', serif;
+            font-weight: bold;
             padding-top: 20px;
         }
         p{
+            font-family: 'Domine', serif;
+            line-height: 2.5rem;
             text-align: center;
             width: 80%;
             padding: 20px 0;
@@ -104,7 +114,37 @@
         flex-wrap: wrap;
 //        justify-content: space-around;
         justify-content: center;
-        
+        .gallery-container{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            .gallery-overlay{
+                position: absolute;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.5); /* Black see-through */
+                color: #f1f1f1; 
+                // width: 100%;
+                transition: .5s ease;
+                opacity:0;
+                color: white;
+                font-size: 20px;
+                padding: 20px;
+                text-align: center;
+                width: 74%;
+                margin-bottom: 25px;
+                a{
+                    text-decoration: none;
+                    color: aliceblue;
+                    font-family: 'Domine', serif;
+                }
+            }
+        }
+        .gallery-container:hover .gallery-overlay{
+            opacity: 1;
+        }
+
         div{
             display: flex;
             flex-direction: column;
@@ -125,25 +165,104 @@
             }
         }
     }
+    .browse{
+        display: flex;
+        flex-direction: column;
+        // background-color: black;
+        width: 100%;
+        #searchbar2{
+            background-color: black;
+            display: flex;
+            align-self: center;
+           //  padding: 20px 0;
+            width: 100%;
+            border-radius: 25px;
+            padding: 16px;
+            input{
+               //  padding: 10px 0px;
+               padding: 16px;
+                width: 50%;
+                font-size: 2rem;
+                border-radius: 25px;
+                box-shadow: 1px 1px rgb(157, 100, 3);
+            }
+            .text1{
+                background-image: url(/images/chefPortfolioLogo-Search.jpg);
+                background-repeat: no-repeat;
+                background-position: center right 10%;
+               //  text-indent: 20px;
+               @media screen and(max-width: 1520px){
+                   background-image: none;
+               }
+            }
+            .text1:focus{
+                box-shadow: 0 0 3px 2px rgb(0, 136, 255);
+                outline: none;
+                background-image: none;
+            }
+           //  .text1:active{
+           //     //  background-image: none;
+           //  }
+       }
+       section{
+           display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+        //    justify-content: space-around;
+           justify-content: center;
+           align-items: center;
+           align-content: center;
+           width: 100%;
+        //    margin: 30px;
+        .browse-overlay-container{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 30%;
+            margin: 1%;
+            h2{
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.5); /* Black see-through */
+                color: #f1f1f1; 
+                transition: .5s ease;
+                opacity:1;
+                color: white;
+                padding: 20px;
+                text-align: center;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                font-size: 1.7rem;
+                font-family: 'Bitter', serif;
+                width: 100%;
+            }
+            img{
+                width: 100%;
+            }
+            .browse-overlay{
+                position: absolute;
+                    bottom: 0;
+                    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+                    color: #f1f1f1; 
+                    // width: 100%;
+                    transition: .5s ease;
+                    opacity:0;
+                    color: white;
+                    font-size: 20px;
+                    padding: 20px;
+                    text-align: center;
+                    width: 100%;
+                    a{
+                        text-decoration: none;
+                        color: aliceblue;
+                        font-family: 'Domine', serif;
+                    }
+            }
+        }
+        .browse-overlay-container:hover .browse-overlay{
+            opacity: 1;
+        }
+       }
+    }
 }
-// .overlay-container{
-//     // position: relative;
-
-// }
-// .overlay{
-//     // position: absolute; 
-//     bottom: 0; 
-//     background: rgb(0, 0, 0);
-//     background: rgba(0, 0, 0, 0.5); /* Black see-through */
-//     color: #f1f1f1; 
-//     width: 100%;
-//     transition: .5s ease;
-//     opacity:0;
-//     color: white;
-//     font-size: 20px;
-//     padding: 20px;
-//     text-align: center;
-// }
-// .overlay-container:hover .overlay{
-//     opacity: 1;
-// }
