@@ -56,6 +56,11 @@
   src: local('Play Regular'), local('Play-Regular'), url(https://fonts.gstatic.com/s/play/v11/6aez4K2oVqwIvtU2Gg.ttf) format('truetype');
 }
 /*======== VARIABLES & MIXINS================*/
+.image-shadow {
+  display: flex;
+  box-shadow: 2px 2px 5px grey;
+  background-color: dimgray;
+}
 /*========= RESET & GLOBALS =================*/
 html,
 body,
@@ -182,44 +187,164 @@ img {
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
+  box-shadow: 0 2px 10px grey;
 }
 #heading nav {
   display: flex;
-  justify-content: flex-end;
+  align-self: center;
+  font-size: 3rem;
+  text-decoration: none;
 }
 #heading nav ul {
-  position: fixed;
-  width: 40%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
-  font-size: 3.5rem;
-  text-decoration: none;
-  padding-top: 20px;
+  width: 100%;
 }
-#heading nav a {
-  color: aliceblue;
+#heading nav ul a {
   text-decoration: none;
+  color: aliceblue;
+}
+#heading #searchbar1 {
+  display: flex;
+  align-self: center;
+  padding: 20px 0;
+  width: 30%;
+}
+#heading #searchbar1 input {
+  padding: 10px 0px;
+  width: 100%;
+  font-size: 2rem;
+  border-radius: 25px;
 }
 #heading #title {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 150px;
 }
 #heading #title h1 {
   display: flex;
   align-self: center;
   color: aquamarine;
-  font-size: 6rem;
+  font-size: 11rem;
+  font-family: 'Ma Shan Zheng', cursive;
+  padding: 20px;
 }
 #heading #title p {
   display: flex;
   align-self: center;
   text-align: center;
   width: 50%;
+  color: aliceblue;
+  font-size: 3rem;
+  font-family: 'Caveat', cursive;
+  padding: 20px;
 }
 /*================ HOME-PAGE ================*/
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container .content-section {
+  display: flex;
+  align-items: center;
+  border-left: solid 2px lightgrey;
+  border-right: solid 2px lightgrey;
+}
+.container .featured-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.container .featured-text h1 {
+  color: black;
+  margin: 0;
+}
+.container .featured-text p {
+  width: 80%;
+  padding: 20px 0;
+}
+.container .featured-text p span a {
+  text-decoration: none;
+  color: black;
+}
+.container .featured-text p span a:hover {
+  color: burlywood;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.container .featured-text div {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.container .featured-text div img {
+  display: flex;
+  box-shadow: 2px 2px 5px grey;
+  background-color: dimgray;
+  width: 70%;
+  margin-bottom: 2px;
+}
+.container .featured-chef {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .featured-chef div {
+  margin-top: 50px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+}
+.container .featured-chef div img {
+  display: flex;
+  box-shadow: 2px 2px 5px grey;
+  background-color: dimgray;
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 2px;
+}
+.container .featured-chef h2 {
+  padding-top: 20px;
+}
+.container .featured-chef p {
+  text-align: center;
+  width: 80%;
+  padding: 20px 0;
+}
+.container .featured-gallery {
+  padding-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container .featured-gallery div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  padding: 10px 10px;
+}
+.container .featured-gallery div h2 {
+  font-size: 2rem;
+  width: 80%;
+  text-align: center;
+  padding: 20px 0;
+}
+.container .featured-gallery div img {
+  display: flex;
+  box-shadow: 2px 2px 5px grey;
+  background-color: dimgray;
+  width: 85%;
+  padding: 15px;
+  background-color: aliceblue;
+}
 /*================ AboutUs ==================*/
 .aboutBox {
   text-align: center;
