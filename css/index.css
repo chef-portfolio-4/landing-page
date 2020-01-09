@@ -292,8 +292,6 @@ img {
 .container .content-section {
   display: flex;
   align-items: center;
-  border-left: solid 2px lightgrey;
-  border-right: solid 2px lightgrey;
 }
 .container .featured-text {
   display: flex;
@@ -423,7 +421,6 @@ img {
 }
 .aboutBox .saladBox {
   display: flex;
-  object-fit: scale-down;
 }
 @media ( max-width: 500px ) {
   .aboutBox .saladBox {
