@@ -195,12 +195,23 @@ img {
   height: 100vh;
   box-shadow: 0 2px 10px grey;
 }
+@media ( max-width: 1000px ) {
+  #heading {
+    background-image: url(../images/mobileTabletLanding.jpg);
+  }
+}
 #heading nav {
   display: flex;
   align-self: center;
   font-size: 3rem;
   text-decoration: none;
   text-align: center;
+}
+@media ( max-width: 1000px ) {
+  #heading nav {
+    font-size: 2rem;
+    width: 30%;
+  }
 }
 #heading nav ul {
   display: flex;
@@ -230,6 +241,11 @@ img {
   width: 30%;
   border-radius: 25px;
   padding: 16px;
+}
+@media ( max-width: 1000px ) {
+  #heading #searchbar1 {
+    width: 50%;
+  }
 }
 #heading #searchbar1 input {
   padding: 16px;
@@ -268,6 +284,11 @@ img {
   padding: 20px;
   text-shadow: 2px 2px 5px black;
 }
+@media ( max-width: 500px ) {
+  #heading #title h1 {
+    font-size: 9rem;
+  }
+}
 #heading #title p {
   display: flex;
   align-self: center;
@@ -289,11 +310,23 @@ img {
     width: 75%;
   }
 }
+@media ( max-width: 1000px ) {
+  #heading #title p {
+    font-size: 2rem;
+    width: 90%;
+  }
+}
 /*================ HOME-PAGE ================*/
 .container {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
+}
+@media ( max-width: 1000px ) {
+  .container {
+    max-width: none;
+    width: 100%;
+  }
 }
 .container .content-section {
   display: flex;
@@ -306,12 +339,23 @@ img {
   align-content: center;
   align-items: center;
 }
+@media ( max-width: 1000px ) {
+  .container .featured-text {
+    width: 65%;
+  }
+}
 .container .featured-text h1 {
   font-family: 'Bitter', serif;
   font-weight: bold;
   color: black;
   margin: 0;
   text-align: center;
+}
+@media ( max-width: 1000px ) {
+  .container .featured-text h1 {
+    margin-top: 40px;
+    font-size: 2.5rem;
+  }
 }
 .container .featured-text p {
   text-align: center;
@@ -320,6 +364,12 @@ img {
   padding: 20px 0;
   line-height: 2.5rem;
   padding-bottom: 50px;
+}
+@media ( max-width: 1000px ) {
+  .container .featured-text p {
+    width: 90%;
+    font-size: 1.5rem;
+  }
 }
 .container .featured-text p span a {
   text-decoration: none;
@@ -371,11 +421,21 @@ img {
   flex-direction: column;
   align-items: center;
 }
+@media ( max-width: 1000px ) {
+  .container .featured-chef {
+    width: 75%;
+  }
+}
 .container .featured-chef div {
   margin-top: 50px;
   background-color: aliceblue;
   display: flex;
   justify-content: center;
+}
+@media ( max-width: 1000px ) {
+  .container .featured-chef div {
+    margin: 0 10%;
+  }
 }
 .container .featured-chef div img {
   display: flex;
@@ -385,10 +445,20 @@ img {
   margin-top: 20px;
   margin-bottom: 2px;
 }
+@media ( max-width: 1000px ) {
+  .container .featured-chef div img {
+    margin-top: 0;
+  }
+}
 .container .featured-chef h2 {
   font-family: 'Bitter', serif;
   font-weight: bold;
   padding-top: 20px;
+}
+@media ( max-width: 1000px ) {
+  .container .featured-chef h2 {
+    font-size: 2.5rem;
+  }
 }
 .container .featured-chef p {
   font-family: 'Domine', serif;
@@ -397,7 +467,14 @@ img {
   width: 80%;
   padding: 20px 0;
 }
+@media ( max-width: 1000px ) {
+  .container .featured-chef p {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+}
 .container .featured-gallery {
+  margin-bottom: 10px;
   padding-bottom: 25px;
   display: flex;
   flex-wrap: wrap;
@@ -409,6 +486,11 @@ img {
   justify-content: center;
   align-content: center;
   align-items: center;
+}
+@media ( max-width: 1000px ) {
+  .container .featured-gallery .gallery-container {
+    width: 28%;
+  }
 }
 .container .featured-gallery .gallery-container .gallery-overlay {
   position: absolute;
@@ -446,6 +528,11 @@ img {
   text-align: center;
   padding: 20px 0;
 }
+@media ( max-width: 1000px ) {
+  .container .featured-gallery div h2 {
+    font-size: 1.5rem;
+  }
+}
 .container .featured-gallery div img {
   display: flex;
   box-shadow: 2px 2px 5px grey;
@@ -453,6 +540,11 @@ img {
   width: 85%;
   padding: 15px;
   background-color: aliceblue;
+}
+@media ( max-width: 1000px ) {
+  .container .featured-gallery .feat3 {
+    margin-top: 16px;
+  }
 }
 .container .browse {
   display: flex;
@@ -474,6 +566,14 @@ img {
   top: 0;
   z-index: 1;
 }
+@media ( max-width: 1000px ) {
+  .container .browse #searchbar2 {
+    width: 95%;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 0;
+  }
+}
 .container .browse #searchbar2 ul {
   display: flex;
   flex-direction: row;
@@ -482,8 +582,23 @@ img {
   align-content: center;
   align-items: center;
 }
+@media ( max-width: 1000px ) {
+  .container .browse #searchbar2 ul {
+    width: 40%;
+    margin-left: 150px;
+    padding-right: 90px;
+  }
+}
 .container .browse #searchbar2 ul li {
   margin-bottom: 10px;
+}
+@media ( max-width: 1000px ) {
+  .container .browse #searchbar2 ul li {
+    display: flex;
+    flex-direction: row;
+    margin: 0 30px;
+    padding-bottom: 10px;
+  }
 }
 .container .browse #searchbar2 ul li a {
   background-color: #ffffff;
@@ -493,6 +608,12 @@ img {
   text-decoration: none;
   color: black;
   font-size: 1.8rem;
+}
+@media ( max-width: 1000px ) {
+  .container .browse #searchbar2 ul li a {
+    font-size: 1.5rem;
+    padding: 9px 25px;
+  }
 }
 .container .browse #searchbar2 ul li:hover a {
   background-color: rgba(240, 248, 255, 0.42);
@@ -505,12 +626,18 @@ img {
   border-radius: 25px;
   box-shadow: 1px 1px #9d6403;
 }
+@media ( max-width: 1000px ) {
+  .container .browse #searchbar2 input {
+    width: 100%;
+    padding: 8px;
+  }
+}
 .container .browse #searchbar2 .text1 {
   background-image: url(/images/chefPortfolioLogo-Search.jpg);
   background-repeat: no-repeat;
   background-position: center right 10%;
 }
-@media screen and (max-width: 1000px) {
+@media ( max-width: 1000px ) {
   .container .browse #searchbar2 .text1 {
     background-image: none;
   }
@@ -535,6 +662,12 @@ img {
   position: relative;
   width: 30%;
   margin: 1%;
+}
+@media ( max-width: 1000px ) {
+  .container .browse section .browse-overlay-container {
+    width: 25%;
+    margin: 3%;
+  }
 }
 .container .browse section .browse-overlay-container h2 {
   bottom: 0;

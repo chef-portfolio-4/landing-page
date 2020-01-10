@@ -2,7 +2,10 @@
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
-    
+    @media @mobileTablet{
+        max-width: none;
+        width: 100%;
+    }
     .content-section{
 //        background-color: wheat;
         display: flex;
@@ -16,6 +19,10 @@
         justify-content: center;
         align-content: center;
         align-items: center;
+
+        @media @mobileTablet{
+            width: 65%;
+        }
         
         h1{
             font-family: 'Bitter', serif;
@@ -23,6 +30,10 @@
             color: black;;
             margin: 0;
             text-align: center;
+            @media @mobileTablet{
+                margin-top: 40px;
+                font-size: 2.5rem;
+            }
         }
         
         p{
@@ -32,6 +43,10 @@
             padding: 20px 0;
             line-height: 2.5rem;
             padding-bottom: 50px;
+            @media @mobileTablet{
+                width: 90%;
+                font-size: 1.5rem;
+            }
             span{
                 a{
                     text-decoration: none;
@@ -82,22 +97,35 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media @mobileTablet{
+            width: 75%;
+        }
         div{
             margin-top: 50px;
             background-color: aliceblue;
             display: flex;
             justify-content: center;
+
+            @media @mobileTablet{
+                margin: 0 10%;
+            }
             img{
                 .image-shadow();
                 width: 70%;
                 margin-top: 20px;
                 margin-bottom: 2px;
+                @media @mobileTablet{
+                    margin-top: 0;
+                }
             }
         }
         h2{
             font-family: 'Bitter', serif;
             font-weight: bold;
             padding-top: 20px;
+            @media @mobileTablet{
+                font-size: 2.5rem;
+            }
         }
         p{
             font-family: 'Domine', serif;
@@ -105,21 +133,32 @@
             text-align: center;
             width: 80%;
             padding: 20px 0;
+            @media @mobileTablet{
+                width: 90%;
+                font-size: 1.5rem;
+            }
         }
     }
     .featured-gallery{
+        margin-bottom: 10px;
         padding-bottom: 25px;
 //        background-color: aliceblue;
         display: flex;
         flex-wrap: wrap;
 //        justify-content: space-around;
         justify-content: center;
+
         .gallery-container{
             position: relative;
             display: flex;
             justify-content: center;
             align-content: center;
             align-items: center;
+
+            @media @mobileTablet{
+                width: 28%;
+            }
+
             .gallery-overlay{
                 position: absolute;
                 bottom: 0;
@@ -156,12 +195,21 @@
                 width: 80%;
                 text-align: center;
                 padding: 20px 0;
+                
+                @media @mobileTablet{
+                    font-size: 1.5rem;
+                }
             }
             img{
                 .image-shadow();
                 width: 85%;
                 padding: 15px;
                 background-color: aliceblue;
+            }
+        }
+        .feat3{
+            @media @mobileTablet{
+                margin-top: 16px;
             }
         }
     }
@@ -185,6 +233,13 @@
             top: 0;
             z-index: 1;
 
+            @media @mobileTablet{
+                width: 95%;
+                padding-left: 20px;
+                padding-top: 8px;
+                padding-bottom: 0;
+            }
+
             ul{
                 display: flex;
                 flex-direction: row;
@@ -192,6 +247,12 @@
                 width: 50%;
                 align-content: center;
                 align-items: center;
+                
+                @media @mobileTablet{
+                    width: 40%;
+                    margin-left: 150px;
+                    padding-right: 90px;
+                }
                 li{
                     // padding: 20px 45px;
                     // background-color: aliceblue;
@@ -203,6 +264,13 @@
                     // border-radius: 25px;
                     // font-family: 'Courier Prime', monospace;
                     margin-bottom: 10px;
+                    
+                    @media @mobileTablet{
+                        display: flex;
+                        flex-direction: row;
+                        margin: 0 30px;
+                        padding-bottom: 10px;
+                    }
                     a{
                         background-color: rgb(255, 255, 255);
                         // padding: 3.3% 15.5%;
@@ -215,6 +283,11 @@
                         text-decoration: none;
                         color: black;
                         font-size: 1.8rem;
+
+                        @media @mobileTablet{
+                            font-size: 1.5rem;
+                            padding: 9px 25px;
+                        }
                 }
             }
             li:hover {
@@ -235,15 +308,20 @@
                 font-size: 2rem;
                 border-radius: 25px;
                 box-shadow: 1px 1px rgb(157, 100, 3);
+                
+                @media @mobileTablet{
+                    width: 100%;
+                    padding: 8px;
+                }
             }
             .text1{
                 background-image: url(/images/chefPortfolioLogo-Search.jpg);
                 background-repeat: no-repeat;
                 background-position: center right 10%;
-               //  text-indent: 20px;
-               @media screen and(max-width: 1000px){
-                   background-image: none;
-               }
+
+                @media @mobileTablet{
+                    background-image: none;
+                }
             }
             .text1:focus{
                 box-shadow: 0 0 3px 2px rgb(0, 136, 255);
@@ -263,13 +341,22 @@
            align-items: center;
            align-content: center;
            width: 100%;
-        //    margin: 30px;
+
+           @media @mobileTablet{
+
+           }
+
         .browse-overlay-container{
             display: flex;
             flex-direction: column;
             position: relative;
             width: 30%;
             margin: 1%;
+            
+            @media @mobileTablet{
+                width: 25%;
+                margin: 3%;
+            }
             h2{
                 bottom: 0;
                 background: rgba(0, 0, 0, 0.5);
