@@ -596,7 +596,7 @@ img {
   .container .browse #searchbar2 ul li {
     display: flex;
     flex-direction: row;
-    margin: 0 30px;
+    margin: 0 25px;
     padding-bottom: 10px;
   }
 }
@@ -608,6 +608,7 @@ img {
   text-decoration: none;
   color: black;
   font-size: 1.8rem;
+  max-width: 100%;
 }
 @media ( max-width: 1000px ) {
   .container .browse #searchbar2 ul li a {
