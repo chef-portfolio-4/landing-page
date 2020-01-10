@@ -615,15 +615,17 @@ img {
 }
 .aboutBox .featBox {
   align-content: center;
+  border: 1px solid blue;
   font-size: 3rem;
   padding-top: 3%;
 }
 @media ( max-width: 500px ) {
   .aboutBox .featBox {
-    padding-top: 10%;
+    padding-top: 2%;
   }
 }
 .aboutBox .tvLogo {
+  border: 1px solid orange;
   display: flex;
   justify-content: space-around;
   align-self: center;
@@ -632,6 +634,7 @@ img {
 @media ( max-width: 500px ) {
   .aboutBox .tvLogo {
     flex-direction: column;
+    padding-top: 0;
   }
 }
 .aboutBox .tvLogo .logo {
@@ -747,6 +750,12 @@ input[type=submit]:hover {
   .buildBox .teamBox .members {
     width: 40%;
   }
+}
+.buildBox .teamBox .members .teamName {
+  font-size: 4rem;
+}
+.buildBox .teamBox .members .teamTitle {
+  font-size: 3rem;
 }
 /*================ FOOTER ===================*/
 .footer {
