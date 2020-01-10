@@ -10,6 +10,9 @@
     @media @mobileTablet{
         background-image: url(../images/mobileTabletLanding.jpg);
     }
+    @media @mobile{
+        background-image: url(../images/mobilelanding2.jpg);
+    }
     
     nav{
         display: flex;
@@ -20,6 +23,9 @@
         @media @mobileTablet{
             font-size: 2rem;
             width: 30%;
+        }
+        @media @mobile{
+            width: 70%;
         }
         ul{
             display: flex;
@@ -41,6 +47,10 @@
                     // width: 100%;
                     border-radius: 15px;
                     font-family: 'Courier Prime', monospace;
+                    @media @mobile{
+                        margin: 3% 0;
+                        padding: 3% 20%;
+                    }
             }
                 a:hover{
                     color: aliceblue;
@@ -64,6 +74,11 @@
          @media @mobileTablet{
              width: 50%;
          }
+         @media @mobile{
+             width: 75%;
+             padding: 0 16px;
+            margin: 0;
+         }
          input{
             //  padding: 10px 0px;
             padding: 16px;
@@ -71,6 +86,9 @@
              font-size: 2rem;
              border-radius: 25px;
              box-shadow: 1px 1px rgb(157, 100, 3);
+             @media @mobile{
+                 padding: 10px 16px;
+             }
          }
          .text1{
              background-image: url(/images/chefPortfolioLogo-Search.jpg);
@@ -105,7 +123,8 @@
             padding: 20px;
             text-shadow: 2px 2px 5px black;
             @media @mobile{
-                font-size: 9rem;
+                font-size: 8rem;
+                padding-top: 0;
             }
         }
         p{
@@ -128,6 +147,10 @@
             @media @mobileTablet{
                 font-size: 2rem;
                 width: 90%;
+            }
+            @media @mobile{
+                font-size: 1.7rem;
+                width: 98%;
             }
         }
     }
